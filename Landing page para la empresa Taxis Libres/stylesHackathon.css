@@ -217,3 +217,28 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* seccion video */
+#section-video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section-video .title-video{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #1B1F3B;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+    text-align: center;
+}
+#section-video .container-video{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
