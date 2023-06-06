@@ -2,6 +2,7 @@
     --black-tx: #121929;
     --white-tx: #ffffff
 }
+/* desktop 1920px */
 *{
     box-sizing: border-box;
     margin:0;
@@ -50,6 +51,7 @@ header .container-items-txl img{
     height: 38px;
 }
 header .container-items-txl a{
+    display: flex;
     font-family: 'Montserrat', sans-serif;
     color: var(--white-tx);
     text-decoration: none; 
@@ -119,7 +121,7 @@ main{
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 60px;
 }
 
@@ -279,6 +281,7 @@ main{
 #section-form-registration{
     width: 100%;
     height: auto;
+    margin-top: 60px;
     margin-bottom: 60px;
 }
 
@@ -361,9 +364,312 @@ main{
     background-repeat: no-repeat;
   }
 /* seccion del footer */
-footer{
+#footer{
+    background-color: #242424;
+    width: 100%;
+    height: 500px;
+}
+
+#footer .footer-container--menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+#footer .footer-container--menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+#footer .footer-container--menu a:hover{
+    color: #c3dc00;;
+}
+#footer .footer-container--menu .title-menu--footer{
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+#footer .footer-container--menu p{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+#footer .footer-container--menu .container-menu--up{
+    width: 95%;
+    height: 250px;
+    display: flex;
+    gap: 70px;
+    overflow: hidden;
+}
+#footer .footer-container--menu .container-apps{
+    display: flex;
+    gap: 20px;
+}
+#footer .footer-container--menu .container-img-app{
+    width: 140px;
+    height: 42px;
+}
+#footer .footer-container--menu img{
+    width: 100%;
+    height: 100%;
+}
+#footer .footer-container--menu .container-menu-ul{
+    display: flex;
+    flex-direction: column;
+}
+#footer .section-acredits{
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+#footer .container-acredits{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+#footer .container-acredits .container-acredit--img{
+    width: 160px;
+    height: 40px;
+}
+#footer .container-acredits .container-acredit--img img{
+    width: 100%;
+    height: auto;
+}
+/* seccion de social media */
+#social-media{
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    background-color: #3A3A3A;
+    display: flex;
+}
+
+#social-media .container-legal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 
 }
 
+#social-media .container-legal ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#social-media .container-legal li{
+    line-height: 24px;
+    color: #ffffff;
+    font-size: 16px;
+}
 
+#social-media .container-legal .logo-blackywhite{
+    display: flex;
+    width: 124px;
+    height: 36px;
+    background-image: url("./assets/img/logotaxislibresbw.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#social-media .ul-rigth{
+    display: flex;
+    justify-content: flex-end;
+}
 
+#social-media .ul-rigth .social-icon--facebook{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-image: url("./assets/img/icon-facebook.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#social-media .ul-rigth .social-icon--twiter{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-image: url("./assets/img/icon-twitter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#social-media .ul-rigth .social-icon--instagram{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-image: url("./assets/img/icon-instagram.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#social-media .ul-rigth .social-icon--youtube{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-image: url("./assets/img/icon-youtube.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#social-media .ul-rigth .social-icon--tiktok{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-image: url("./assets/img/icon-tiktok.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#social-media .ul-rigth .social-icon--linkedin{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-image: url("./assets/img/icon-linkedin.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* desktop  1080px*/
+@media screen and (min-width: 780px) and (max-width: 1100px){
+    #section-invitation .title--invitation{
+        font-size: 50px;
+    }
+    #section-invitation .text-container-prizes--down h2{
+        font-size: 40px;
+    }
+    #section-invitation .container-invitation-p-winner{
+        font-size: 16px;
+    }
+    #section-invitation .container-invitation--p{
+        font-size: 26px;
+    }
+    #social-media .container-legal ul{
+        gap: 20px;
+    }
+    #footer .footer-container--menu .container-menu--up {
+        gap: 40px;
+    }
+    #footer .footer-container--menu .container-apps{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #footer .footer-container--menu .container-img-app{
+        width: 70px;
+        height: 21px;
+    }
+    #footer .footer-container--menu .title-menu--footer{
+        font-size: 18px;
+    }
+    #footer .footer-container--menu a {
+        font-size: 10px;
+    }
+    #social-media .container-legal .logo-blackywhite{
+        display: none;
+    }
+
+}
+/* mobile 320px */
+@media screen and (min-width: 320px) and (max-width: 779px){
+    header .container-items-txl a{
+        display: none;
+    }
+    header .container-items-txl ul{
+        justify-content: center;
+    }
+    #section-challenge--container .paragraph-challenge{
+        font-size: 20px;
+    }
+    #section-invitation .text-container-prizes--down{
+        flex-direction: column;
+    }
+    #social-media .container-legal .ul-rigth {
+        display: none;
+    }
+    #social-media .container-legal li{
+        font-size: 12px;
+    }
+    #social-media .container-legal u{
+        gap: 8px;
+    }
+    #section-sponsors .title-sponsor {
+        font-size: 30px;
+    }
+    #section-invitation .container-invitation--p{
+        font-size: 20px;
+    }
+    #section-invitation .title--invitation{
+        font-size:40px ;
+    }
+    #section-challenge--container .title-challenge{
+        font-size: 40px;
+    }
+    #section-video .title-video {
+        font-size: 40px;
+    }
+    #section-video .container-video{
+        width: 320px;
+        height: 140px;
+    }
+    #section-video .container-video iframe{
+        width: 100%;
+        height: 100%;
+    }
+    #social-media{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #social-media .container-legal ul{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+    #footer .footer-container--menu a{
+        display: none;
+    }
+    #footer .footer-container--menu .container-menu--up{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer .footer-container--menu .title-menu--footer{
+        font-size: 20px;
+        margin: 0;
+    }
+    #footer .footer-container--menu p{
+        display: none;
+    }
+    #footer .footer-container--menu .container-menu-ul{
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer .footer-container--menu .container-img-app{
+        display: none;
+    }
+    #footer .container-acredits{
+        gap: 20px;
+    }
+    #social-media .container-legal ul{
+        gap: 20px;
+    }
+
+    
+    
+}
