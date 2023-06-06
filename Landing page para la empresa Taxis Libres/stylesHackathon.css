@@ -9,6 +9,7 @@
 }
 html{
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     display: flex;
@@ -261,6 +262,7 @@ main{
     background-color: #c3dc00;
     color: #1B1F3B;
     margin: 80px auto;
+    padding-top: 15px;
     text-align: center;
     text-decoration: none;
     font-size: 24px;
@@ -272,7 +274,60 @@ main{
     color: #c3dc00;
     background-color: #1B1F3B;
 }
+/* seccion de formulario */
 
+#section-form-registration{
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
 
-
-/* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); */
+#section-form-registration form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.25);
+  }
+  
+#section-form-registration .form-group {
+    margin-bottom: 20px;
+  }
+  
+#section-form-registration label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c3dc00;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+#section-form-registration .submit-button {
+    background-color: #c3dc00;
+    color: #1B1F3B;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.25)
+  }
+  #section-form-registration .submit-button:hover{
+    color: #c3dc00;
+    background-color: #1B1F3B;
+  }

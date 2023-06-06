@@ -108,9 +108,40 @@
         </section>
         <!-- seccion registrate aqui -->
         <section id="registration-section" >
-            <a href="#section-invitation" class="registration-button" >
+            <a href="#section-form-registration" class="registration-button" >
                 REGISTRATE 
             </a>
+        </section>
+        <!-- seccion formulario -->
+        <section id="section-form-registration">
+            <form>
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                </div>
+            
+                <div class="form-group">
+                  <label for="apellido">Apellidos:</label>
+                  <input type="text" id="apellido" name="apellido" required>
+                </div>
+            
+                <div class="form-group">
+                  <label for="correo">Correo:</label>
+                  <input type="email" id="correo" name="correo" required>
+                </div>
+            
+                <div class="form-group">
+                  <label for="celular">Número de celular:</label>
+                  <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required>
+                </div>
+            
+                <div class="form-group">
+                  <label for="profesion">Profesión:</label>
+                  <input type="text" id="profesion" name="profesion" required>
+                </div>
+            
+                <button type="submit" class="submit-button">Enviar</button>
+              </form>
         </section>
     </main>
 </body>
